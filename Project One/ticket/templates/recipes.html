@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Recipes
+{% endblock %}
+
+{% block content %}
+
+
+<style>
+
+    .container {
+        border: 1px solid #002fff;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        /* optional: Abstand zwischen den Zellen */
+    }
+
+    .item {
+        /* optional: Rahmen um die Zellen */
+        padding: 10px;
+        /* optional: Innenabstand der Zellen */
+    }
+</style>
+
+
+
+<h1 style="text-align: center;margin-top:2.5%;">Recipes</h1>
+
+ {% if cookie %}
+<h2 class="text-center">Willkommen, {{ cookie }}</h2>
+{% endif %}
+
+<div class="container">
+
+    {% for item in items %}
+    <div class="item">
+        <div class="card" style="width: 18rem;">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text">{{item.description | safe}}</p>
+                <a href="/recipe/{{item.id}}" class="btn btn-primary">Mehr infos</a>
+
+                {% if own_recipes %}
+                <a href="/delete_recipe/{{item.id}}" class="btn btn-danger">Löschen</a>
+                <!-- <a href="/edit_recipe/{{item.id}}" class="btn btn-warning">Bearbeiten</a> -->
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- Weitere Elemente -->
+</div>
+
+
+
+
+{% endblock %}

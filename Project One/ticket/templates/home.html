@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<style>
+    /* Zusätzliche CSS-Stile */
+    .card {
+        border: none; /* Entfernt die Standard-Rahmen der Karten */
+        border-radius: 10px; /* Runde Ecken für die Karten */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Leichte Schatten für die Karten */
+        transition: box-shadow 0.3s ease; /* Flüssige Animation für den Schattenübergang */
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Erhöhter Schatten beim Hovern über die Karten */
+    }
+
+    .card-img-top {
+        border-top-left-radius: 10px; /* Runde Ecken für das obere linke Bild der Karten */
+        border-top-right-radius: 10px; /* Runde Ecken für das obere rechte Bild der Karten */
+    }
+
+    .card-body {
+        padding: 1.25rem; /* Geringerer Innenabstand für den Karteninhalt */
+    }
+
+    .card-title {
+        font-weight: bold; /* Fettschrift für den Karten-Titel */
+    }
+
+    .btn-primary {
+        background-color: #007bff; /* Ändert die Primärfarbe der Schaltflächen */
+        border-color: #007bff; /* Ändert die Rahmenfarbe der Schaltflächen */
+    }
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Dunklere Primärfarbe beim Hovern über die Schaltflächen */
+        border-color: #0056b3; /* Dunklere Rahmenfarbe beim Hovern über die Schaltflächen */
+    }
+
+      /* Zusätzlicher Abstand oberhalb der Karten */
+      .container {
+        margin-top: 2%;
+    }
+</style>
+</style>
+
+
+<h1 class="text-center">Rezept-Datenbank</h1>
+
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3"> <!-- 25% width on medium devices and larger -->
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Repeat this div block for each card -->
+
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Example for another card -->
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4">
+                    <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of another card example -->
+
+        </div>
+    </div>
+</body>
+
+
+{% endblock %}

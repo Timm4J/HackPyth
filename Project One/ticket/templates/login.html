@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+   
+{% block title %}
+    Login
+{% endblock %}
+
+{% block content %}
+
+<body class="text-center">
+    <div class="container">
+        <form method="POST" class="form-register" action = "/login" style="color:black">
+            <img class="mb-4" src="https://picsum.photos/200/300">
+            <br>
+            <h1 class="h3 mb3  font-weight-normal">Please login</h1>
+
+            <label for="username" class="form-label">Username</label>
+            <input type="text" id="username" name="username" class = "form-control">
+
+            <label for="password" class="form-label">Passwort</label>
+            <input type="password" id="password" name="password" class = "form-control" ario-describedby="passwordHelpBlock">
+
+            <br>
+            <button type="submit" class="btn btn-primary">Login</button>
+            
+        </form>
+    </div>
+</body>
+
+{% endblock %}
